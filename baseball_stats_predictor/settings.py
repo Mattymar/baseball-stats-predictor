@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for Luther project
+# Scrapy settings for baseball_stats_predictor project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'Luther'
+BOT_NAME = 'baseball_stats_predictor'
 
-SPIDER_MODULES = ['Luther.spiders']
-NEWSPIDER_MODULE = 'Luther.spiders'
+SPIDER_MODULES = ['baseball_stats_predictor.spiders']
+NEWSPIDER_MODULE = 'baseball_stats_predictor.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'Luther (+http://www.yourdomain.com)'
+#USER_AGENT = 'baseball_stats_predictor (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'Luther.middlewares.LutherSpiderMiddleware': 543,
+#    'baseball_stats_predictor.middlewares.LutherSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'Luther.middlewares.MyCustomDownloaderMiddleware': 543,
+#    'baseball_stats_predictor.middlewares.MyCustomDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'Luther.pipelines.LutherPipeline': 300,
+#    'baseball_stats_predictor.pipelines.LutherPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
