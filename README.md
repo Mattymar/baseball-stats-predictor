@@ -27,11 +27,11 @@ In a nutshell, this project was a major task in feature engineering. I only real
 
 ## Results
 Model MSE: 0.000511388264567  
-Baselin MSE: 0.000925244219653
+Baseline MSE: 0.000925244219653
 
 The current best model has an R-squared of .4655 using Elastic Net regularization with cross validation. This model does quite a bit better than the baseline of using the previous season's batting average.
 
-**Some Highlights**
+**Some Highlights**  
 Chris Johnson (2013) Previous Season: .321 -- Model Prediction: .261 -- Actual: .263  
 Dan Uggla (2010) Previous Season: .287 -- Model Prediction: .245 -- Actual:\
  .233 
