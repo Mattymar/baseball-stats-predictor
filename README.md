@@ -41,5 +41,4 @@ The current best model has an R-squared of .4655 using Elastic Net regularizatio
 
 **Some Highlights**  
 Chris Johnson (2013) Previous Season: .321 -- Model Prediction: .261 -- Actual: .263  
-Dan Uggla (2010) Previous Season: .287 -- Model Prediction: .245 -- Actual:\
- .233 
+Dan Uggla (2010) Previous Season: .287 -- Model Prediction: .245 -- Actual: .233 
