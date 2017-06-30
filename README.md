@@ -23,13 +23,13 @@ The scope of some of these interactions really requires a full blog post to do t
 
 In addition to interactions, I tested a few extreme features.  The idea behind these was that many batted ball stats like pull percentage may have multiple phases in their impact on batting average. For example, extreme pull hitters may lose significant points in batting average due to team's being able to apply a shift.  That would suggest that batting average is inversely proportional to pull %, but it's likely that the benefits of decreasing one's pull rate diminish at a certain point.  Because of this, I wanted my model to capture the extremes. I also added a "sprayer" category, to capture players who hit the ball to all fields, which tends to be related to higher batting averages, however the benefits of "spraying" tended to be masked by the opposite field percentage category.
 
-<img src="https://github.com/Mattymar/baseball-stats-predictor/blob/master/images/coeffs.png">
+<img src="https://github.com/Mattymar/baseball-stats-predictor/blob/master/images/coeffs.png" width=400>
 
 In a nutshell, this project was a major task in feature engineering. I only really scratched the surface of what's possible with the available data. In the future, I have plans to programatically test some more interactions and extremes.
 
 ## Results
 
-<img src="https://github.com/Mattymar/baseball-stats-predictor/blob/master/images/prediction-vs-actual.png">
+<img src="https://github.com/Mattymar/baseball-stats-predictor/blob/master/images/prediction-vs-actual.png" width=400>
 
 Model MSE: 0.000511388264567  
 Baseline MSE: 0.000925244219653
