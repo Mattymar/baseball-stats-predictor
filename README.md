@@ -12,7 +12,7 @@ The other limitation was number of at bats a player had in a season.  Batting av
 
 *NOTE: An astute analyst would say, "Hey, but your baseline predictions are going to suffer a tad since they're including some predictions from small sample sizes with wider variances." This is true, but our focus was on building a strong model, so I wanted the extra data. I can assure you, that we beat the baseline by a similar margin even with stricter standards. I'll add those results to the notebook when I get a chance.*
 
-##The Approach
+## The Approach
 I urge you to take a look at the master notebook for a full run-through of my approach to this problem.  Essentially, I took most of the batted ball and advanced stats that weren't results oriented.  The only real results oriented stats that I used were strikeout rate and HR/FB ratio.  I included these stats since they added important insights to the model, without adding noise to the variance I was trying to eliminate.
 
 I also looked at some interactions between categories. For example, I tried combining hard hit percentage with line drive percentage, with the idea being that the value gained by hitting the ball hard may be diminished if you are hitting mostly ground balls or fly balls with few line drives.
@@ -23,13 +23,21 @@ The scope of some of these interactions really requires a full blog post to do t
 
 In addition to interactions, I tested a few extreme features.  The idea behind these was that many batted ball stats like pull percentage may have multiple phases in their impact on batting average. For example, extreme pull hitters may lose significant points in batting average due to team's being able to apply a shift.  That would suggest that batting average is inversely proportional to pull %, but it's likely that the benefits of decreasing one's pull rate diminish at a certain point.  Because of this, I wanted my model to capture the extremes. I also added a "sprayer" category, to capture players who hit the ball to all fields, which tends to be related to higher batting averages, however the benefits of "spraying" tended to be masked by the opposite field percentage category.
 
+<img src="https://github.com/Mattymar/baseball-stats-predictor/blob/master/images/coeffs.png">
+
 In a nutshell, this project was a major task in feature engineering. I only really scratched the surface of what's possible with the available data. In the future, I have plans to programatically test some more interactions and extremes.
 
 ## Results
+
+<img src="https://github.com/Mattymar/baseball-stats-predictor/blob/master/images/prediction-vs-actual.png">
+
 Model MSE: 0.000511388264567  
 Baseline MSE: 0.000925244219653
 
 The current best model has an R-squared of .4655 using Elastic Net regularization with cross validation. This model does quite a bit better than the baseline of using the previous season's batting average.
+
+<img src="https://github.com/Mattymar/baseball-stats-predictor/blob/master/images/predictions1.png">
+<img src="https://github.com/Mattymar/baseball-stats-predictor/blob/master/images/predictions2.png">
 
 **Some Highlights**  
 Chris Johnson (2013) Previous Season: .321 -- Model Prediction: .261 -- Actual: .263  
